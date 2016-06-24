@@ -213,7 +213,12 @@ main {
 	}	
 	
 /*---------------------------------------- masonry -----------------------------------------*/	
-
+	.masonry {
+		width: $wrapper_tablet + 30px; 
+		margin: 0 auto; 
+	}
+	
+	
 	#container {
 		width: $wrapper_tablet;
 		margin: -20px 0 0 11px;

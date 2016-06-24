@@ -197,9 +197,13 @@ main {
 	}	
 	
 /*---------------------------------------- masonry -----------------------------------------*/	
-
+	.masonry {
+		width: $wrapper_mobile + 30px; 
+		margin: 0 auto; 
+	}
+	
+	
 	#container {
-		width: $wrapper_mobile;
 		margin: -13px 0 0 11px;
 
 	.item { 

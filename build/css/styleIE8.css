@@ -63,11 +63,49 @@ table {
   src: url("../../src/fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/roboto-light-webfont.woff2") format("woff2"), url("../../src/fonts/roboto-light-webfont.woff") format("woff"), url("../../src/fonts/roboto-light-webfont.ttf") format("truetype"), url("../../src/fonts/roboto-light-webfont.svg#robotolight") format("svg");
   font-weight: normal;
   font-style: normal; }
+body {
+  background: #color_white;
+  color: #343434;
+  font-family: "Roboto Light", sans-serif; }
+  body a {
+    text-decoration: none;
+    color: white; }
+    body a:hover {
+      color: #4e73db; }
+  body section {
+    position: relative;
+    overflow: hidden; }
+  body h1 {
+    font-size: 52px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.2; }
+  body h2 {
+    margin: 100px 0 30px;
+    text-align: center;
+    color: #343434;
+    font-size: 22px; }
+  body h3 {
+    margin: 15px 0;
+    text-align: left;
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.2; }
+  body h4 {
+    margin: 20px 0 12px;
+    text-align: center;
+    color: #343434;
+    font-size: 14px; }
+  body h5 {
+    font-family: "Montserrat Bold", sans-serif;
+    color: #343434;
+    font-size: 14px; }
+
+/*------------------------ header --------------------------*/
 header {
   width: 100%;
   height: 700px;
-  background-image: url(../../src/img/header_bg.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../../src/img/header_bg.jpg) no-repeat;
   background-position: center;
   font-family: "Montserrat Bold", sans-serif; }
 
@@ -85,12 +123,7 @@ header {
       height: 31px;
       margin-left: 20px;
       padding: 8px 16px;
-      border: 2px solid #fff;
-      -moz-border-radius: 20px;
-      -webkit-border-radius: 20px;
-      -khtml-border-radius: 20px;
-      border-radius: 20px;
-      behavior: url(border-radius.htc); }
+      border: 2px solid #fff; }
       .top .top__login span:hover {
         border: 2px solid #4e73db; }
   .top .top__name {
@@ -106,14 +139,9 @@ header {
     margin: 25px 0 48px;
     font-family: 'Roboto Light';
     font-size: 24px;
-    color: #fff; }
+    color: #color_white; }
   .title a {
     background: #ff4e50;
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -khtml-border-radius: 25px;
-    border-radius: 25px;
-    behavior: url(border-radius.htc);
     font-size: 14px;
     padding: 12px 23px; }
     .title a:hover {
@@ -181,11 +209,6 @@ main {
       line-height: 20px;
       background: #ff4e50;
       color: #fff;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      -khtml-border-radius: 10px;
-      border-radius: 10px;
-      behavior: url(border-radius.htc);
       font-family: "Montserrat Regular", sans-serif;
       font-size: 10px;
       text-transform: uppercase;
@@ -256,9 +279,12 @@ main {
       background: #ff4e50;
       color: #fff;
       cursor: pointer; }
+  main .masonry {
+    width: 1040px;
+    margin: 0 auto; }
   main #container {
     width: 940px;
-    margin: -15px 0 -0 8px; }
+    margin: -15px 0 0 8px; }
     main #container .item {
       width: 300px;
       height: 310px;
@@ -278,20 +304,12 @@ main {
         left: 0;
         padding-left: -155px;
         color: #fff;
-        text-shadow: 2px 2px 2px rgba(25, 25, 25, 0.3);
         font-family: "Montserrat Bold", sans-serif;
         font-size: 20px;
         text-transform: capitalize; }
       main #container .item .mason_img {
         height: 310px;
-        width: auto;
-        -moz-transition: all 0.3s ease-out;
-        -o-transition: all 0.3s ease-out;
-        -webkit-transition: all 0.3s ease-out; }
-        main #container .item .mason_img:hover {
-          -webkit-transform: scale(1.1);
-          -moz-transform: scale(1.1);
-          -o-transform: scale(1.1); }
+        width: auto; }
     main #container .item.w2 {
       width: 620px;
       height: 310px; }
@@ -339,93 +357,54 @@ main {
       main .search #search__btn:hover {
         background: #4e73db;
         color: #fff; }
-
-footer {
-  margin-top: 65px;
-  width: 100%;
-  border-top: 4px solid #ff4e50; }
-  footer .footer__wrapper {
-    width: 940px;
-    margin: 0 auto;
-    padding-top: 40px; }
-    footer .footer__wrapper .footer__logo {
-      float: left;
-      font-family: "Montserrat Bold", sans-serif;
-      font-size: 18px -2px;
-      color: #ff4e50;
-      text-transform: uppercase;
-      letter-spacing: 0.04em; }
-    footer .footer__wrapper .footer__company {
-      float: left;
-      margin: 0 92px 0 99px; }
-    footer .footer__wrapper .footer__menu {
-      list-style: none;
-      margin: 28px 0 20px; }
-      footer .footer__wrapper .footer__menu li a {
-        display: block;
-        height: 24px;
-        text-decoration: none;
-        font-family: "Roboto Light", sans-serif;
-        font-size: 14px;
-        color: #343434; }
-        footer .footer__wrapper .footer__menu li a:hover {
-          color: #ff4e50; }
-    footer .footer__wrapper h5 {
-      display: inline-block;
-      float: left; }
-    footer .footer__wrapper .design {
-      width: 116px;
-      float: left;
-      padding-left: 363px; }
-      footer .footer__wrapper .design p {
-        text-align: right;
-        text-transform: uppercase;
-        letter-spacing: 0.07em;
+  main footer {
+    margin-top: 65px;
+    width: 100%;
+    border-top: 4px solid #ff4e50; }
+    main footer .footer__wrapper {
+      width: 940px;
+      margin: 0 auto;
+      padding-top: 40px; }
+      main footer .footer__wrapper .footer__logo {
+        float: left;
         font-family: "Montserrat Bold", sans-serif;
-        font-size: 10px;
-        color: #cccccc; }
-      footer .footer__wrapper .design img {
-        float: right;
-        display: block;
-        margin-top: 7px;
-        box-sizing: border-box; }
-
-body {
-  background: #ccc;
-  color: #343434;
-  font-family: "Roboto Light", sans-serif; }
-  body a {
-    text-decoration: none;
-    color: white; }
-    body a:hover {
-      color: #4e73db; }
-  body section {
-    position: relative;
-    overflow: hidden; }
-  body h1 {
-    font-size: 52px;
-    color: #fff;
-    text-transform: uppercase;
-    line-height: 1.2; }
-  body h2 {
-    margin: 100px 0 30px;
-    text-align: center;
-    color: #343434;
-    font-size: 22px; }
-  body h3 {
-    margin: 15px 0;
-    text-align: left;
-    color: #fff;
-    font-size: 24px;
-    line-height: 1.2; }
-  body h4 {
-    margin: 20px 0 12px;
-    text-align: center;
-    color: #343434;
-    font-size: 14px; }
-  body h5 {
-    font-family: "Montserrat Bold", sans-serif;
-    color: #343434;
-    font-size: 14px; }
+        font-size: 18px -2px;
+        color: #ff4e50;
+        text-transform: uppercase;
+        letter-spacing: 0.04em; }
+      main footer .footer__wrapper .footer__company {
+        float: left;
+        margin: 0 92px 0 99px; }
+      main footer .footer__wrapper .footer__menu {
+        list-style: none;
+        margin: 28px 0 20px; }
+        main footer .footer__wrapper .footer__menu li a {
+          display: block;
+          height: 24px;
+          text-decoration: none;
+          font-family: "Roboto Light", sans-serif;
+          font-size: 14px;
+          color: #343434; }
+          main footer .footer__wrapper .footer__menu li a:hover {
+            color: #ff4e50; }
+      main footer .footer__wrapper h5 {
+        display: inline-block;
+        float: left; }
+      main footer .footer__wrapper .design {
+        width: 116px;
+        float: left;
+        padding-left: 363px; }
+        main footer .footer__wrapper .design p {
+          text-align: right;
+          text-transform: uppercase;
+          letter-spacing: 0.07em;
+          font-family: "Montserrat Bold", sans-serif;
+          font-size: 10px;
+          color: #cccccc; }
+        main footer .footer__wrapper .design img {
+          float: right;
+          display: block;
+          margin-top: 7px;
+          box-sizing: border-box; }
 
 /*# sourceMappingURL=styleIE8.css.map */
