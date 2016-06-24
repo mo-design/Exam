@@ -1,4 +1,6 @@
-$(document).ready(function() {
+(function( $ ){
+  
+	$.fn.slider = function(){
 	
 	var slideNum = [];
 	var slideCount = [];
@@ -52,4 +54,7 @@ $(document).ready(function() {
 
 	
 	
-});
+    return this;
+  };
+
+})(jQuery);

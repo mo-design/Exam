@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	
-	
+	$('.slider').slider();
 	
 	
 	var container = document.querySelector('#container');
@@ -92,6 +92,12 @@ $(document).ready(function() {
 
   } 
 	
-  
+ 	
+
+	
   
 });
+
+
+
+	
